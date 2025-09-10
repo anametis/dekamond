@@ -1,5 +1,3 @@
-"use client";
-
 import { RouteGuard } from "@/components/common/route-guard";
 import { LoginForm } from "@/features/login-form";
 import type { Metadata } from "next";
