@@ -48,7 +48,10 @@ export default function NotFound() {
           {/* Action Buttons */}
           <div className="flex flex-col gap-3">
             <Link href="/login" className="w-full">
-              <Button className="w-full h-11 sm:h-12 text-sm sm:text-base font-semibold btn-hover-lift shadow-lg bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary">
+              <Button
+                className="w-full h-11 sm:h-12 text-sm sm:text-base font-semibold btn-hover-lift shadow-lg bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary"
+                aria-label="Go to home"
+              >
                 <Home className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Go to Home
               </Button>
@@ -58,6 +61,7 @@ export default function NotFound() {
               onClick={() => window.history.back()}
               variant="outline"
               className="w-full h-11 sm:h-12 text-sm sm:text-base font-semibold btn-hover-lift shadow-lg"
+              aria-label="Go back"
             >
               <ArrowLeft className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               Go Back

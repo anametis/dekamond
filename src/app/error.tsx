@@ -18,6 +18,7 @@ export default function Error({
           onClick={() => {
             window.location.reload();
           }}
+          aria-label="Try again"
           className="px-4 py-2 bg-blue-500 text-white rounded hover:cursor-pointer hover:bg-blue-600"
         >
           Try again

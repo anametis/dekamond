@@ -63,6 +63,7 @@ export function Header() {
                   variant="outline"
                   onClick={handleLogout}
                   className="flex items-center md:space-x-2 h-9 px-4 bg-background/80 backdrop-blur-sm border border-border/50 hover:border-destructive/50 hover:text-destructive hover:bg-destructive/5 transition-all duration-200"
+                  aria-label="Sign out"
                 >
                   <LogOut className="" />
                   <span className="font-medium hidden sm:inline text-xs sm:text-sm">

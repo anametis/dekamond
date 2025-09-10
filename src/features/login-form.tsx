@@ -169,6 +169,7 @@ export function LoginForm() {
                   ? "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
                   : "bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary"
               }`}
+              aria-label="Sign in"
               disabled={
                 isLoading ||
                 !mobileNumber.trim() ||
