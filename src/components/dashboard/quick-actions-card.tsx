@@ -11,7 +11,7 @@ import { ActionItem } from "@/components/common/action-item";
 
 export function QuickActionsCard() {
   return (
-    <Card className="animate-slide-up border-0 shadow-lg bg-card/95 backdrop-blur-sm min-h-[300px] sm:min-h-[350px]">
+    <Card className="animate-slide-up-delayed animate-stagger-6 border-0 shadow-lg bg-card/95 backdrop-blur-sm min-h-[300px] sm:min-h-[350px] card-hover">
       <CardHeader className="pb-3 sm:pb-4">
         <CardTitle className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl">
           <div className="p-1.5 sm:p-2 bg-gradient-to-br from-accent/20 to-accent/10 rounded-xl flex-shrink-0">

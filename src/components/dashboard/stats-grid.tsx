@@ -7,11 +7,11 @@ export function StatsGrid() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
       {STATS_DATA.map((stat, index) => {
         const Icon = stat.icon;
+        const staggerClass = `animate-stagger-${index + 1}`;
         return (
           <Card
             key={index}
-            className="relative overflow-hidden animate-slide-up border-0 shadow-lg bg-card/95 backdrop-blur-sm hover:shadow-xl transition-all duration-300 btn-hover-lift min-h-[140px] sm:min-h-[160px]"
-            style={{ animationDelay: `${index * 0.1}s` }}
+            className={`relative overflow-hidden animate-slide-up-delayed ${staggerClass} border-0 shadow-lg bg-card/95 backdrop-blur-sm card-hover min-h-[140px] sm:min-h-[160px]`}
           >
             <CardHeader className="pb-2 sm:pb-3">
               <div className="flex items-center justify-between gap-2">
@@ -19,7 +19,7 @@ export function StatsGrid() {
                   {stat.title}
                 </CardTitle>
                 <div
-                  className={`p-2 sm:p-3 rounded-xl ${stat.color} shadow-sm flex-shrink-0`}
+                  className={`p-2 sm:p-3 rounded-xl ${stat.color} shadow-sm flex-shrink-0 icon-hover`}
                 >
                   <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
                 </div>
