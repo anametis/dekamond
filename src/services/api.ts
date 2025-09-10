@@ -146,7 +146,7 @@ class ApiClient {
 
   // ================================ API Calls ================================ //
   async getUser(): Promise<FetchResponse<RandomUserApiResponse>> {
-    return this.get<RandomUserApiResponse>("/?results=1&nat=us");
+    return this.get<RandomUserApiResponse>("?results=1&nat=us");
   }
 }
 
