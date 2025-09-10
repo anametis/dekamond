@@ -1,5 +1,5 @@
-import { Header } from "@/components/header";
-import { RouteGuard } from "@/components/route-guard";
+import { Header } from "@/components/common/header";
+import { RouteGuard } from "@/components/common/route-guard";
 import { AppSidebar } from "@/components/sidebar/app-sidebar";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 

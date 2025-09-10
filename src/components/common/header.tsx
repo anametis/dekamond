@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Skeleton } from "@/components/ui/skeleton";
 import { LogOut } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { SidebarTrigger } from "./ui/sidebar";
+import { ThemeToggle } from "@/components/common/theme-toggle";
+import { SidebarTrigger } from "../ui/sidebar";
 import { useAuthStore } from "@/stores/auth-store";
 import { useAuth } from "@/hooks/use-auth";
 

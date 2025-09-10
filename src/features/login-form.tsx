@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Loader2, Phone } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemeToggle } from "@/components/common/theme-toggle";
 import {
   validateMobileNumber,
   formatMobileNumber,
@@ -51,7 +51,8 @@ export function LoginForm() {
     setIsLoading(true);
 
     try {
-      const response: FetchResponse<RandomUserApiResponse> = await apiClient.getUser();
+      const response: FetchResponse<RandomUserApiResponse> =
+        await apiClient.getUser();
       const user = response.data.results[0];
       setUser(user);
       router.push("/dashboard");

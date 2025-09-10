@@ -1,6 +1,6 @@
 "use client";
 
-import { LoadingSpinner } from "./ui/loading-spinner";
+import { LoadingSpinner } from "../ui/loading-spinner";
 import { useAuthGuard } from "@/hooks/use-auth-guard";
 
 export const RouteGuard: React.FC<{

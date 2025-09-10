@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Zap } from "lucide-react";
 import { ACTION_ITEMS } from "@/constants/dashboard";
-import { ActionItem } from "@/components/action-item";
+import { ActionItem } from "@/components/common/action-item";
 
 export function QuickActionsCard() {
   return (
