@@ -6,6 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Zustand](https://img.shields.io/badge/Zustand-5.0-FF6B6B?style=flat-square)](https://zustand-demo.pmnd.rs/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_App-0ea5e9?style=flat-square&logo=vercel)](https://dekamond-tau.vercel.app/)
 
 ## ✨ Features
 
@@ -25,6 +26,11 @@
 - **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
 - **State Management**: [Zustand 5.0](https://zustand-demo.pmnd.rs/)
 - **Icons**: [Lucide React](https://lucide.dev/)
+
+## 🌐 Live Demo
+
+- **URL**: https://dekamond-tau.vercel.app/
+- **Hosting**: Vercel
 
 ## 🚀 Quick Start
 
