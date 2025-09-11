@@ -20,17 +20,15 @@ export function Header() {
           <div className="flex items-center gap-3 sm:gap-6 min-w-0 flex-1">
             <div className="relative flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14">
               {user ? (
-                <div className="bg-gradient-to-br from-primary to-accent rounded-full p-0.5 w-full h-full">
-                  <Avatar className="size-8 sm:size-10 md:size-12 lg:size-14 border-2 border-background">
-                    <AvatarImage
-                      src={user.picture.medium || "/placeholder.svg"}
-                      alt={`${user.name.first} ${user.name.last}`}
-                    />
-                    <AvatarFallback className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground text-sm sm:text-lg font-bold">
-                      {`${user.name.first[0]}${user.name.last[0]}`.toUpperCase()}
-                    </AvatarFallback>
-                  </Avatar>
-                </div>
+                <Avatar className="size-8 sm:size-10 md:size-12 lg:size-14 border-2 border-background">
+                  <AvatarImage
+                    src={user.picture.medium || "/placeholder.svg"}
+                    alt={`${user.name.first} ${user.name.last}`}
+                  />
+                  <AvatarFallback className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground text-sm sm:text-lg font-bold">
+                    {`${user.name.first[0]}${user.name.last[0]}`.toUpperCase()}
+                  </AvatarFallback>
+                </Avatar>
               ) : (
                 <Skeleton className="w-full h-full rounded-full" />
               )}
